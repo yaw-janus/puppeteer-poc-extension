@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Puppeteer-POC-Extension",
+  "description": "Puppeteer proof of concept",
+  "permissions": ["storage", "tabs", "activeTab", "debugger", "management", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  } 
+}
